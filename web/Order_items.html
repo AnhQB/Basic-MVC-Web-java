@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p><a href="ControllerOrder_items">List all</a></p>
+        <form method="POST" action="ControllerOrder_items">
+            <input name="s" type="hidden" value="insert">
+            <table>
+                <tr>
+                    <td>Order id</td>
+                    <td><input type="number" name="order_id"></td>
+                </tr>
+                <tr>
+                    <td>Item id</td>
+                    <td><input type="number" name="item_id"></td>
+                </tr>
+                <tr>
+                    <td>Product id</td>
+                    <td><input type="number" name="product_id"></td>
+                </tr>
+                <tr>
+                    <td>Quantity</td>
+                    <td><input type="number" name="quantity"></td>
+                </tr>
+                <tr>
+                    <td>List price</td>
+                    <td><input type="number" name="list_price" step="any"></td>
+                </tr>
+                <tr>
+                    <td>Discount</td>
+                    <td><input type="number" step="any" name="discount"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

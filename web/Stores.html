@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Stores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="ControllerStores">List All</a>
+        <form method="get" action="ControllerStores">
+            <input type="hidden" name="s" value="insert">
+            <table>
+                <tr>
+                    <td>Store id</td>
+                    <td><input type="number" name="store_id"></td>
+                </tr>
+                <tr>
+                    <td>Store Name</td>
+                    <td><input type="text" name="store_name"></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="number" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Street</td>
+                    <td><input type="text" name="street"></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" name="city"></td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><select name="state">
+                        <option value="CA">CA</option>
+                        <option value="NY">NY</option>
+                        <option value="TX">TX</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Zip code</td>
+                    <td><input type="number" name="zip_code"></td>
+                </tr>
+                <tr>
+                    <td><button>Submit</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

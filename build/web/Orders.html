@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="ControllerOrders">List all</a>
+        <form action="ControllerOrders" method="POST">
+            <input type="hidden" name="s" value="insert">
+            <table>
+                <tr>
+                    <td>Order id</td>
+                    <td><input type="number" name="order_id"></td>
+                </tr>
+                <tr>
+                    <td>Customer id</td>
+                    <td><input type="text" name="customer_id"></td>
+                </tr>
+                <tr>
+                    <td>Order status</td>
+                    <td><select name="order_status">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Order date</td>
+                    <td><input type="date" name="order_date"></td>
+                </tr>
+                <tr>
+                    <td>Required date</td>
+                    <td><input type="date" name="required_date"></td>
+                </tr>
+                <tr>
+                    <td>Shipped date</td>
+                    <td><input type="date" name="shipped_date"></td>
+                </tr>
+                <tr>
+                    <td>Store id</td>
+                    <td><input type="number" name="store_id"></td>
+                </tr>
+                <tr>
+                    <td>Staff id</td>
+                    <td><input type="number" name="staff_id"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

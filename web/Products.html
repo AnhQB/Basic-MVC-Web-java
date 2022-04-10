@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="ControllerProducts">List All</a>
+        <form method="POST" action="ControllerProducts">
+            <input type="hidden" name="s" value="insert">
+            <table>
+            <tr>
+                <td>Product id</td>
+                <td><input type="number" name="product_id"></td>
+            </tr>
+            <tr>
+                <td>Product name</td>
+                <td><input type="text" name="pname"></td>
+            </tr>
+            <tr>
+                <td>Model year</td>
+                <td><input type="number" name="model_year"></td>
+            </tr>
+            <tr>
+                <td>List price</td>
+                <td><input type="number" name="list_price"></td>
+            </tr>
+            <tr>
+                <td>Brand name</td>
+                <td><select name="brand_name">
+                    <option value="Trek">Trek</option>
+                    <option value="Ritchey">Ritchey</option>
+                    <option value="Surly">Surly</option>
+                    <option value="Heller">Heller</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Category Name</td>
+                <td><input type="text" name="cname"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Submit</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+
+            </table>
+        </form>
+
+    </body>
+</html>

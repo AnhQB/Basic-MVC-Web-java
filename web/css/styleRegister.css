@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    background-color: #edd785;
+}
+
+form{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border: 1px solid #edd785;
+    border-radius: 8px;
+    background-color: white;
+    padding: 40px 10px;
+    width: 35%;
+}
+
+form table caption{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+form table tr td:first-child{
+    padding-right: 10px;
+}
+.sm{
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+button{
+    margin-left: 50px;
+    padding: 5px 50px;
+}
+

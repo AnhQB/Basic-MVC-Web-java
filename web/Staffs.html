@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Staffs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="ControllerStaffs">List All</a>
+        <form action="ControllerStaffs" method="POST">
+            <input type="hidden" name="s" value="InsertStaffs">
+            <table>
+                <tr>
+                    <td>Staff id</td>
+                    <td><input type="number" name="staff_id"></td>
+                </tr>
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="number" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Active</td>
+                    <td>
+                        <input type="radio" name="active" value="0">Active 
+                        <input type="radio" name="active" value="1">DeActive 
+                    </td>
+                </tr>
+                <tr>
+                    <td>Store name</td>
+                    <td><select name="store_id">
+                        <option value="1">Santa Cruz Bikes</option>
+                        <option value="2">Baldwin Bikes</option>
+                        <option value="3">Rowlett Bikes</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Manager name</td>
+                    <td><select name="manager_id">
+                        <option value="">null</option>
+                        <option value="1">Fabiola Jackson</option>
+                        <option value="2">Mireya Copeland</option>
+                        <option value="5">Jannette David</option>
+                        <option value="7">Venita Daniel</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><button>Submit</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
