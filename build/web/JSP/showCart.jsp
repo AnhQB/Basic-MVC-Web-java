@@ -84,7 +84,7 @@
                         String username = (String) session.getAttribute("username");
                         int lock = 0;
                         //Customers cus = (Customers)session.getAttribute(username);
-
+                        int stt = 0;
                         while (em.hasMoreElements()) {
                             double total = 0;
                             String key = em.nextElement().toString(); //get key
@@ -94,7 +94,8 @@
                     %>
                     <table width=70% border="1"  >
                         <tr>
-                            <th>Item ID</th>
+                            
+                            <th>STT</th>
                             <th>Name</th>
                             <th>Quantity</th>
                             <th>Price</th>
@@ -108,13 +109,14 @@
                             list = (ArrayList<String>) value;
                             total = Integer.parseInt(list.get(0)) * Double.parseDouble(list.get(2));
                             totalCart += total;
+                            stt++;
                         %>
                         <tr>
-                            <td> <%= key%></td>
+                            <td> <%= stt%></td>
                             <td> <%= list.get(1)%></td>
                             <td> 
                                 <input  
-                                    type="number" name="<%=key%>" value="<%= list.get(0)%>" min="1" step="1"
+                                    type="number" name="<%=key%>" value="<%= list.get(0)%>" min="1" step="1" max="10"
                                     >
                             </td>
                             <td> <%= list.get(2)%></td>
